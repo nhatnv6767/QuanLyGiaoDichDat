@@ -1,21 +1,21 @@
 public class GiaoDich {
-    private String id;
+    private int id;
     private String date;
     private double donGia;
     private double dienTich;
 
-    public GiaoDich(String id, String date, double donGia, double dienTich) {
+    public GiaoDich(int id, String date, double donGia, double dienTich) {
         this.id = id;
         this.date = date;
         this.donGia = donGia;
         this.dienTich = dienTich;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
