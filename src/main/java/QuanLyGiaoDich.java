@@ -103,12 +103,13 @@ public class QuanLyGiaoDich {
 
     public void menuChinh() {
         while (true) {
-            System.out.println("1. Thêm giao dịch");
+            System.out.println("1. Thêm giao dịch (Thêm bằng tay)");
             System.out.println("2. Xuất danh sách giao dịch");
             System.out.println("3. Xuất số lượng giao dịch đất và nhà");
             System.out.println("4. Trung bình (tiền) của giao dịch đất");
             System.out.println("5. Hiển thị giao dịch trong tháng 9/2013");
-            System.out.println("6. Thoát");
+            System.out.println("6. Thêm giao dịch bằng Dummy Data (Both)");
+            System.out.println("7. Thoát");
             int choice = Nhap.inputInt("Mời lựa chọn: ");
             menuChinh(choice);
         }
@@ -155,6 +156,11 @@ public class QuanLyGiaoDich {
                 break;
 
             case 6:
+                dummyDataGDDat();
+                dummyDataGDNha();
+                break;
+
+            case 7:
                 System.exit(0);
                 break;
         }
@@ -168,6 +174,70 @@ public class QuanLyGiaoDich {
             System.out.println("1. Xuất giao dịch đất");
             System.out.println("2. Xuất giao dịch nhà");
         }
+    }
+
+    private void dummyDataGDDat() {
+        GiaoDichDat gdd1 = new GiaoDichDat(111, "2013/09/12", 3000000, 30, LoaiDat.LOAI_A);
+        dsGiaoDichDat.add(gdd1);
+
+        GiaoDichDat gdd2 = new GiaoDichDat(112, "2018/09/12", 3000000, 45, LoaiDat.LOAI_B);
+        dsGiaoDichDat.add(gdd2);
+
+        GiaoDichDat gdd3 = new GiaoDichDat(113, "2013/09/10", 3000000, 15, LoaiDat.LOAI_C);
+        dsGiaoDichDat.add(gdd3);
+
+        GiaoDichDat gdd4 = new GiaoDichDat(114, "2015/09/12", 3000000, 20, LoaiDat.LOAI_A);
+        dsGiaoDichDat.add(gdd4);
+
+        GiaoDichDat gdd5 = new GiaoDichDat(115, "2008/09/12", 3000000, 25, LoaiDat.LOAI_A);
+        dsGiaoDichDat.add(gdd5);
+
+        GiaoDichDat gdd6 = new GiaoDichDat(116, "2015/09/12", 3000000, 70, LoaiDat.LOAI_B);
+        dsGiaoDichDat.add(gdd6);
+
+        GiaoDichDat gdd7 = new GiaoDichDat(117, "2007/01/02", 7000000, 300, LoaiDat.LOAI_B);
+        dsGiaoDichDat.add(gdd7);
+
+        GiaoDichDat gdd8 = new GiaoDichDat(118, "2012/09/12", 4000000, 500, LoaiDat.LOAI_A);
+        dsGiaoDichDat.add(gdd8);
+
+        GiaoDichDat gdd9 = new GiaoDichDat(119, "2013/09/05", 2000000, 120, LoaiDat.LOAI_A);
+        dsGiaoDichDat.add(gdd9);
+
+        GiaoDichDat gdd10 = new GiaoDichDat(120, "2013/09/06", 400000, 700, LoaiDat.LOAI_B);
+        dsGiaoDichDat.add(gdd10);
+    }
+
+    private void dummyDataGDNha() {
+        GiaoDichNha gdn1 = new GiaoDichNha(211, "2013/09/08", 1500000, 50, LoaiNha.LOAI_THUONG, "Địa chỉ 1");
+        dsGiaoDichNha.add(gdn1);
+
+        GiaoDichNha gdn2 = new GiaoDichNha(212, "2013/09/08", 2300000, 300, LoaiNha.LOAI_CAO_CAP, "Địa chỉ 2");
+        dsGiaoDichNha.add(gdn2);
+
+        GiaoDichNha gdn3 = new GiaoDichNha(213, "2015/09/08", 4000000, 45, LoaiNha.LOAI_THUONG, "Địa chỉ 3");
+        dsGiaoDichNha.add(gdn3);
+
+        GiaoDichNha gdn4 = new GiaoDichNha(214, "2013/09/08", 1500000, 70, LoaiNha.LOAI_THUONG, "Địa chỉ 4");
+        dsGiaoDichNha.add(gdn4);
+
+        GiaoDichNha gdn5 = new GiaoDichNha(215, "2011/09/08", 1450000, 25, LoaiNha.LOAI_CAO_CAP, "Địa chỉ 5");
+        dsGiaoDichNha.add(gdn5);
+
+        GiaoDichNha gdn6 = new GiaoDichNha(216, "2010/09/08", 1700000, 15, LoaiNha.LOAI_THUONG, "Địa chỉ 6");
+        dsGiaoDichNha.add(gdn6);
+
+        GiaoDichNha gdn7 = new GiaoDichNha(217, "2013/09/08", 3500000, 25, LoaiNha.LOAI_CAO_CAP, "Địa chỉ 7");
+        dsGiaoDichNha.add(gdn7);
+
+        GiaoDichNha gdn8 = new GiaoDichNha(218, "2013/09/08", 3200000, 19, LoaiNha.LOAI_CAO_CAP, "Địa chỉ 8");
+        dsGiaoDichNha.add(gdn8);
+
+        GiaoDichNha gdn9 = new GiaoDichNha(219, "2012/09/08", 1200000, 90, LoaiNha.LOAI_THUONG, "Địa chỉ 9");
+        dsGiaoDichNha.add(gdn9);
+
+        GiaoDichNha gdn10 = new GiaoDichNha(220, "2011/09/08", 7500000, 25, LoaiNha.LOAI_CAO_CAP, "Địa chỉ 10");
+        dsGiaoDichNha.add(gdn10);
     }
 
 

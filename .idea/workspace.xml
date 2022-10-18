@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="190ddc6b-bafb-4a73-925d-419bce7dfdb6" name="Changes" comment="Quan Ly Giao Dich">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="190ddc6b-bafb-4a73-925d-419bce7dfdb6" name="Changes" comment="Hoan Tat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/QuanLyGiaoDich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuanLyGiaoDich.java" afterDir="false" />
     </list>
@@ -123,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666100457178</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Hoan Tat">
+      <created>1666100640019</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666100640019</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,7 +155,8 @@
     <MESSAGE value="Giao dich dat" />
     <MESSAGE value="Giao dich dat 2" />
     <MESSAGE value="Quan Ly Giao Dich" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quan Ly Giao Dich" />
+    <MESSAGE value="Hoan Tat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hoan Tat" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
