@@ -4,6 +4,15 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
+
+
+/*
+ * Mục đích: Các hàm liên quan đến nhập liệu, chuyển đổi sang dạng tiền Việt
+ * Người tạo: Trần Thiện Tâm
+ * Ngày tạo: 18/10/2022
+ * Version: 1.0
+ * */
+
 public class Nhap {
     public static Scanner scan = new Scanner(System.in);
 

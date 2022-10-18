@@ -1,3 +1,10 @@
+/*
+ * Mục đích: Tạo lớp Giao Dich Nhà, kế thừa từ lớp Giao dịch,
+ * xử lý các nghiệp vụ liên quan đến giao dịch nhà
+ * Người tạo: Trần Thiện Tâm
+ * Ngày tạo: 18/10/2022
+ * Version: 1.0
+ * */
 public class GiaoDichNha extends GiaoDich {
     private LoaiNha loaiNha;
     private String diaChi;

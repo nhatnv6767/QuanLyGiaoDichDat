@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="190ddc6b-bafb-4a73-925d-419bce7dfdb6" name="Changes" comment="Hoan tat chua">
+    <list default="true" id="190ddc6b-bafb-4a73-925d-419bce7dfdb6" name="Changes" comment="chac la chua">
+      <change afterPath="$PROJECT_DIR$/khoa4_chuong3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GiaoDich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GiaoDich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GiaoDichDat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GiaoDichDat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GiaoDichNha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GiaoDichNha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoaiDat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoaiDat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoaiNha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoaiNha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Nhap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Nhap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/QuanLyGiaoDich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuanLyGiaoDich.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,9 +54,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/bhnone/Work/Coding/CyberLearn/Mindset/Exercise/Khoa_4/Khoa_4_Chapter_3/[Khoa_4]_[Chapter_3]_[TranThienTam]/Khoa_4_Chapter_3_TranThienTam",
     "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -157,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666103779514</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="chac la chua">
+      <created>1666104152693</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666104152693</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,7 +208,8 @@
     <MESSAGE value="Some fix" />
     <MESSAGE value="Some fix 2" />
     <MESSAGE value="Hoan tat chua" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hoan tat chua" />
+    <MESSAGE value="chac la chua" />
+    <option name="LAST_COMMIT_MESSAGE" value="chac la chua" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

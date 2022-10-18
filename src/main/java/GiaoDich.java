@@ -1,3 +1,9 @@
+/*
+ * Mục đích: Tạo lớp Giao Dich, chứa các para chung cho giao dịch đất và giao dịch nhà
+ * Người tạo: Trần Thiện Tâm
+ * Ngày tạo: 18/10/2022
+ * Version: 1.0
+ * */
 public class GiaoDich {
     private int id;
     private String date;

@@ -1,5 +1,13 @@
 import java.util.ArrayList;
 
+/*
+ * Mục đích: Quản lý chung các loại giao dịch, bằng danh sách
+ * Người tạo: Trần Thiện Tâm
+ * Ngày tạo: 18/10/2022
+ * Version: 1.0
+ * */
+
+
 public class QuanLyGiaoDich {
     // danh sach chua cac giao dich
     private ArrayList<GiaoDich> dsGiaoDichDat = new ArrayList<>();
