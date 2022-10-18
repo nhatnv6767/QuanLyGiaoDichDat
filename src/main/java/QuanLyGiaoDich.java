@@ -19,6 +19,7 @@ public class QuanLyGiaoDich {
         System.out.println("\n************** Danh sách giao dịch đất **************");
         if (this.dsGiaoDichDat.size() == 0) {
             System.out.println("Hiện không có giao dịch nào cả!");
+            System.out.println("********************* Kết thúc *********************\n");
         }
         String tieuDe = String.format("%s%15s%15s%15s%15s", "ID", "Date", "Đơn giá", "Diện tích", "Loại Đất");
         System.out.println(tieuDe);
@@ -32,6 +33,7 @@ public class QuanLyGiaoDich {
         System.out.println("\n************** Danh sách giao dịch nhà **************");
         if (this.dsGiaoDichNha.size() == 0) {
             System.out.println("Hiện không có giao dịch nào cả!");
+            System.out.println("********************* Kết thúc *********************\n");
         }
         String tieuDe = String.format("%s%15s%15s%15s%15s%15s", "ID", "Date", "Đơn giá", "Diện tích", "Loại nhà", "Địa chỉ");
         System.out.println(tieuDe);
@@ -46,6 +48,7 @@ public class QuanLyGiaoDich {
         System.out.println("\n************** Danh sách giao dịch đất (" + Date + ") **************");
         if (this.dsGiaoDichDat.size() == 0) {
             System.out.println("Hiện không có giao dịch nào cả!");
+            System.out.println("************************** Kết thúc **************************\n");
             return;
         }
         String tieuDe = String.format("%s%15s%15s%15s%15s", "ID", "Date", "Đơn giá", "Diện tích", "Loại Đất");
@@ -56,7 +59,7 @@ public class QuanLyGiaoDich {
             }
         }
 
-        System.out.println("********************* Kết thúc *********************\n");
+        System.out.println("************************** Kết thúc **************************\n");
 
     }
 
@@ -65,6 +68,7 @@ public class QuanLyGiaoDich {
         System.out.println("\n************** Danh sách giao dịch nhà (" + Date + ") **************");
         if (this.dsGiaoDichNha.size() == 0) {
             System.out.println("Hiện không có giao dịch nào cả!");
+            System.out.println("************************** Kết thúc **************************\n");
             return;
         }
         String tieuDe = String.format("%s%15s%15s%15s%15s%15s", "ID", "Date", "Đơn giá", "Diện tích", "Loại nhà", "Địa chỉ");
@@ -75,17 +79,19 @@ public class QuanLyGiaoDich {
             }
         }
 
-        System.out.println("********************* Kết thúc *********************\n");
+        System.out.println("************************** Kết thúc **************************\n");
 
     }
 
     // trung binh tien gd dat
-    private double trungBinhGiaoDichDat() {
+    private String trungBinhGiaoDichDat() {
         double sum = 0;
         for (GiaoDich giaodich : dsGiaoDichDat) {
             sum += giaodich.getPrice();
         }
-        return sum / dsGiaoDichDat.size();
+
+        String tbinhGDDat = Nhap.toVnd(sum / dsGiaoDichDat.size());
+        return tbinhGDDat;
     }
 
     // kiểm tra ngay giao dich và ngày cần kiểm tra (9/2003)
@@ -157,8 +163,11 @@ public class QuanLyGiaoDich {
                 break;
 
             case 4:
+
+                String tbGiaoDichDat = dsGiaoDichDat.size() == 0 ? "0" : trungBinhGiaoDichDat();
+
                 System.out.println("\n***************** Trung Bình *****************");
-                System.out.println("Trung bình (tiền) của giao dịch đất: " + trungBinhGiaoDichDat());
+                System.out.println("Trung bình (tiền) của giao dịch đất: " + tbGiaoDichDat);
                 System.out.println("********************** Kết thúc **********************\n");
                 break;
 
@@ -170,6 +179,8 @@ public class QuanLyGiaoDich {
             case 6:
                 dummyDataGDDat();
                 dummyDataGDNha();
+                System.out.println("\n******************************** THÔNG BÁO ********************************");
+                System.out.println("ĐÃ THÊM THÀNH CÔNG BẰNG DUMMY DATA, CHỌN XUẤT DANH SÁCH ĐỂ XEM DS VỪA THÊM. \n");
                 break;
 
             case 7:
