@@ -16,7 +16,7 @@ public class QuanLyGiaoDich {
     }
 
     private void xuatDSGiaoDichDat() {
-        System.out.println("************** Danh sách giao dịch đất **************");
+        System.out.println("\n************** Danh sách giao dịch đất **************");
         if (this.dsGiaoDichDat.size() == 0) {
             System.out.println("Hiện không có giao dịch nào cả!");
         }
@@ -25,10 +25,11 @@ public class QuanLyGiaoDich {
         for (GiaoDich giaodich : dsGiaoDichDat) {
             System.out.println(giaodich.toString());
         }
+        System.out.println("********************* Kết thúc *********************\n");
     }
 
     private void xuatDSGiaoDichNha() {
-        System.out.println("************** Danh sách giao dịch nhà **************");
+        System.out.println("\n************** Danh sách giao dịch nhà **************");
         if (this.dsGiaoDichNha.size() == 0) {
             System.out.println("Hiện không có giao dịch nào cả!");
         }
@@ -42,7 +43,7 @@ public class QuanLyGiaoDich {
 
     // ds đất giao dịch trong 9/2003
     private void xuatDSGiaoDichDat(String Date) {
-        System.out.println("************** Danh sách giao dịch đất (" + Date + ") **************");
+        System.out.println("\n************** Danh sách giao dịch đất (" + Date + ") **************");
         if (this.dsGiaoDichDat.size() == 0) {
             System.out.println("Hiện không có giao dịch nào cả!");
             return;
@@ -61,7 +62,7 @@ public class QuanLyGiaoDich {
 
     // ds nhà giao dịch trong 9/2003
     private void xuatDSGiaoDichNha(String Date) {
-        System.out.println("************** Danh sách giao dịch nhà (" + Date + ") **************");
+        System.out.println("\n************** Danh sách giao dịch nhà (" + Date + ") **************");
         if (this.dsGiaoDichNha.size() == 0) {
             System.out.println("Hiện không có giao dịch nào cả!");
             return;
@@ -108,7 +109,7 @@ public class QuanLyGiaoDich {
 
     public void menuChinh() {
         while (true) {
-            System.out.println("------- Chương trình quản lý giao dịch đất và nhà -------");
+            System.out.println("\n------- Chương trình quản lý giao dịch đất và nhà -------");
             System.out.println("1. Thêm giao dịch (Thêm bằng tay)");
             System.out.println("2. Xuất danh sách giao dịch");
             System.out.println("3. Xuất số lượng giao dịch đất và nhà");
@@ -149,14 +150,14 @@ public class QuanLyGiaoDich {
                 break;
 
             case 3:
-                System.out.println("***************** Số lượng giao dịch *****************");
+                System.out.println("\n***************** Số lượng giao dịch *****************");
                 System.out.println("Giao dịch đất: " + dsGiaoDichDat.size());
                 System.out.println("Giao dịch nhà: " + dsGiaoDichNha.size());
                 System.out.println("********************** Kết thúc **********************\n");
                 break;
 
             case 4:
-                System.out.println("***************** Trung Bình *****************");
+                System.out.println("\n***************** Trung Bình *****************");
                 System.out.println("Trung bình (tiền) của giao dịch đất: " + trungBinhGiaoDichDat());
                 System.out.println("********************** Kết thúc **********************\n");
                 break;
