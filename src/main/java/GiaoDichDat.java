@@ -43,4 +43,15 @@ public class GiaoDichDat extends GiaoDich {
                 return new GiaoDichDat(id, date, donGia, dienTich, LoaiDat.LOAI_A);
         }
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s%15s%15s%15s%15s",
+                super.getId(),
+                super.getDate(),
+                Nhap.toVnd(getPrice()),
+                super.getDienTich(),
+                loaiDat.toString()
+        );
+    }
 }
