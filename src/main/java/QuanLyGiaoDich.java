@@ -101,7 +101,7 @@ public class QuanLyGiaoDich {
         return (year1 == year2 && month1 == month2);
     }
 
-    private void menuChinh() {
+    public void menuChinh() {
         while (true) {
             System.out.println("1. Thêm giao dịch");
             System.out.println("2. Xuất danh sách giao dịch");
