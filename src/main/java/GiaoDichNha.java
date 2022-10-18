@@ -32,6 +32,7 @@ public class GiaoDichNha extends GiaoDich {
         return super.getPrice();
     }
 
+    // thong tin ve nha
     public static GiaoDichNha nhapGiaoDichNha(int id) {
         String date = Nhap.inputDate();
         double donGia = Nhap.inputDouble("Nhập vào đơn giá: ");
