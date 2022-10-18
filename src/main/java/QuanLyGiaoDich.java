@@ -37,6 +37,7 @@ public class QuanLyGiaoDich {
         for (GiaoDich giaodich : dsGiaoDichNha) {
             System.out.println(giaodich.toString());
         }
+        System.out.println("********************* Kết thúc *********************\n");
     }
 
     // ds đất giao dịch trong 9/2003
@@ -54,6 +55,8 @@ public class QuanLyGiaoDich {
             }
         }
 
+        System.out.println("********************* Kết thúc *********************\n");
+
     }
 
     // ds nhà giao dịch trong 9/2003
@@ -70,6 +73,8 @@ public class QuanLyGiaoDich {
                 System.out.println(giaodich.toString());
             }
         }
+
+        System.out.println("********************* Kết thúc *********************\n");
 
     }
 
@@ -103,6 +108,7 @@ public class QuanLyGiaoDich {
 
     public void menuChinh() {
         while (true) {
+            System.out.println("------- Chương trình quản lý giao dịch đất và nhà -------");
             System.out.println("1. Thêm giao dịch (Thêm bằng tay)");
             System.out.println("2. Xuất danh sách giao dịch");
             System.out.println("3. Xuất số lượng giao dịch đất và nhà");
@@ -110,6 +116,7 @@ public class QuanLyGiaoDich {
             System.out.println("5. Hiển thị giao dịch trong tháng 9/2013");
             System.out.println("6. Thêm giao dịch bằng Dummy Data (Both)");
             System.out.println("7. Thoát");
+            System.out.println("---------------------------------------------------------");
             int choice = Nhap.inputInt("Mời lựa chọn: ");
             menuChinh(choice);
         }
@@ -142,12 +149,16 @@ public class QuanLyGiaoDich {
                 break;
 
             case 3:
-                System.out.println("Số lượng giao dịch đất: " + dsGiaoDichDat.size());
-                System.out.println("Số lượng giao dịch nhà: " + dsGiaoDichNha.size());
+                System.out.println("***************** Số lượng giao dịch *****************");
+                System.out.println("Giao dịch đất: " + dsGiaoDichDat.size());
+                System.out.println("Giao dịch nhà: " + dsGiaoDichNha.size());
+                System.out.println("********************** Kết thúc **********************\n");
                 break;
 
             case 4:
+                System.out.println("***************** Trung Bình *****************");
                 System.out.println("Trung bình (tiền) của giao dịch đất: " + trungBinhGiaoDichDat());
+                System.out.println("********************** Kết thúc **********************\n");
                 break;
 
             case 5:
