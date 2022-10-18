@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="190ddc6b-bafb-4a73-925d-419bce7dfdb6" name="Changes" comment="Class Kieu, Loai Nha">
-      <change afterPath="$PROJECT_DIR$/src/main/java/LoaiDat.java" afterDir="false" />
+    <list default="true" id="190ddc6b-bafb-4a73-925d-419bce7dfdb6" name="Changes" comment="Class Kieu, Loai Dat">
+      <change afterPath="$PROJECT_DIR$/src/main/java/GiaoDichNha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GiaoDich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GiaoDich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Nhap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Nhap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666095827137</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Class Kieu, Loai Dat">
+      <created>1666095878567</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666095878567</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,7 +117,8 @@
     <MESSAGE value="Giao Dich 2" />
     <MESSAGE value="Class Nha^.p" />
     <MESSAGE value="Class Kieu, Loai Nha" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class Kieu, Loai Nha" />
+    <MESSAGE value="Class Kieu, Loai Dat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class Kieu, Loai Dat" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

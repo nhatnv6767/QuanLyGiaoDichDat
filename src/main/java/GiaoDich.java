@@ -43,6 +43,10 @@ public class GiaoDich {
         this.dienTich = dienTich;
     }
 
+    public double getPrice() {
+        return donGia * dienTich;
+    }
+
     @Override
     public String toString() {
         return String.format("%s%15s%15s%15s", id, date, donGia, dienTich);

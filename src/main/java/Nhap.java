@@ -11,12 +11,12 @@ public class Nhap {
         int result = 0;
         boolean gotInt = false;
         while (!gotInt) {
-            System.out.println(noiDung);
+            System.out.print(noiDung);
             if (scan.hasNextInt()) {
                 gotInt = true;
             } else {
                 scan.next();// xoa input hien tai
-                System.out.println("Nhập sai kiểu, hãy nhập vào dạng số <Int>");
+                System.out.print("Nhập sai kiểu, hãy nhập vào dạng số <Int>");
             }
         }
 
@@ -28,12 +28,12 @@ public class Nhap {
         double result = 0;
         boolean gotDouble = false;
         while (!gotDouble) {
-            System.out.println(noiDung);
+            System.out.print(noiDung);
             if (scan.hasNextDouble()) {
                 gotDouble = true;
             } else {
                 scan.next();// xoa input hien tai
-                System.out.println("Nhập sai kiểu, hãy nhập vào dạng số <Double>");
+                System.out.print("Nhập sai kiểu, hãy nhập vào dạng số <Double>");
             }
         }
 
@@ -45,12 +45,12 @@ public class Nhap {
         float result = 0;
         boolean gotFloat = false;
         while (!gotFloat) {
-            System.out.println(noiDung);
+            System.out.print(noiDung);
             if (scan.hasNextFloat()) {
                 gotFloat = true;
             } else {
                 scan.next();// xoa input hien tai
-                System.out.println("Nhập sai kiểu, hãy nhập vào dạng số <Float>");
+                System.out.print("Nhập sai kiểu, hãy nhập vào dạng số <Float>");
             }
         }
 
@@ -62,12 +62,12 @@ public class Nhap {
         long result = 0;
         boolean gotLong = false;
         while (!gotLong) {
-            System.out.println(noiDung);
+            System.out.print(noiDung);
             if (scan.hasNextLong()) {
                 gotLong = true;
             } else {
                 scan.next();// xoa input hien tai
-                System.out.println("Nhập sai kiểu, hãy nhập vào dạng số <Long>");
+                System.out.print("Nhập sai kiểu, hãy nhập vào dạng số <Long>");
             }
         }
 
@@ -77,7 +77,7 @@ public class Nhap {
 
     public static String inputString(String noiDung) {
         String result = "";
-        System.out.println(noiDung);
+        System.out.print(noiDung);
         result = scan.nextLine();
         return result;
     }
@@ -85,7 +85,7 @@ public class Nhap {
     public static String inputDate() {
         String result = "";
         do {
-            System.out.println("Enter date (yyyy/MM/dd)");
+            System.out.print("Enter date (yyyy/MM/dd): ");
             result = scan.nextLine();
         } while (!isSimpleValidateDate(result));
         return result;
