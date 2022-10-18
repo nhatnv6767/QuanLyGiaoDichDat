@@ -136,7 +136,7 @@ public class QuanLyGiaoDich {
                 menuPhu(choice);
                 tempChoice = Nhap.inputInt("Mời lựa chọn: ");
                 if (tempChoice == 1) { // giao dịch đất
-                    // id sẽ được thêm tự động, bắt đầu từ 1, size == 0   (+ 1 = 1)
+                    // id sẽ được thêm tự động, bắt đầu từ 1 nếu chưa có phần tử nào, size == 0   (+ 1 = 1)
                     GiaoDichDat gd = GiaoDichDat.nhapGiaoDichDat(dsGiaoDichDat.size() + 1);
                     themGiaoDichDat(gd);
                 } else if (tempChoice == 2) { // giao dịch nhà
