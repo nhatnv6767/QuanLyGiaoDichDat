@@ -140,7 +140,7 @@ public class QuanLyGiaoDich {
     private void menuChinh(int choice) {
         int tempChoice = 0;
         switch (choice) {
-            case 1:
+            case 1 -> {
                 menuPhu(choice);
                 tempChoice = Nhap.inputInt("Mời lựa chọn: ");
                 if (tempChoice == 1) { // giao dịch đất
@@ -151,9 +151,8 @@ public class QuanLyGiaoDich {
                     GiaoDichNha gd = GiaoDichNha.nhapGiaoDichNha(dsGiaoDichNha.size() + 1);
                     themGiaoDichNha(gd);
                 }
-                break;
-
-            case 2:
+            }
+            case 2 -> {
                 menuPhu(choice);
                 tempChoice = Nhap.inputInt("Mời lựa chọn: ");
                 if (tempChoice == 1) {
@@ -161,39 +160,30 @@ public class QuanLyGiaoDich {
                 } else if (tempChoice == 2) {
                     xuatDSGiaoDichNha();
                 }
-                break;
-
-            case 3:
+            }
+            case 3 -> {
                 System.out.println("\n***************** Số lượng giao dịch *****************");
                 System.out.println("Giao dịch đất: " + dsGiaoDichDat.size());
                 System.out.println("Giao dịch nhà: " + dsGiaoDichNha.size());
                 System.out.println("********************** Kết thúc **********************\n");
-                break;
-
-            case 4:
-
+            }
+            case 4 -> {
                 String tbGiaoDichDat = dsGiaoDichDat.size() == 0 ? "0" : trungBinhGiaoDichDat();
-
                 System.out.println("\n***************** Trung Bình *****************");
                 System.out.println("Trung bình (tiền) của giao dịch đất: " + tbGiaoDichDat);
                 System.out.println("********************** Kết thúc **********************\n");
-                break;
-
-            case 5:
+            }
+            case 5 -> {
                 xuatDSGiaoDichDat("2013/09");
                 xuatDSGiaoDichNha("2013/09");
-                break;
-
-            case 6:
+            }
+            case 6 -> {
                 dummyDataGDDat();
                 dummyDataGDNha();
                 System.out.println("\n******************************** THÔNG BÁO ********************************");
                 System.out.println("ĐÃ THÊM THÀNH CÔNG BẰNG DUMMY DATA, CHỌN XUẤT DANH SÁCH ĐỂ XEM DS VỪA THÊM. \n");
-                break;
-
-            case 7:
-                System.exit(0);
-                break;
+            }
+            case 7 -> System.exit(0);
         }
     }
 
