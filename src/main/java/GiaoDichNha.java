@@ -50,12 +50,10 @@ public class GiaoDichNha extends GiaoDich {
         System.out.println("1. Loại thường");
         System.out.println("2. Loại đặc biệt");
         int choice = Nhap.inputInt("Mời chọn (mặc định: Loại thường): ");
-        switch (choice) {
-            case 2:
-                return new GiaoDichNha(id, date, donGia, dienTich, LoaiNha.LOAI_CAO_CAP, diaChi);
-            default:
-                return new GiaoDichNha(id, date, donGia, dienTich, LoaiNha.LOAI_THUONG, diaChi);
+        if (choice == 2) {
+            return new GiaoDichNha(id, date, donGia, dienTich, LoaiNha.LOAI_CAO_CAP, diaChi);
         }
+        return new GiaoDichNha(id, date, donGia, dienTich, LoaiNha.LOAI_THUONG, diaChi);
     }
 
     @Override

@@ -41,14 +41,11 @@ public class GiaoDichDat extends GiaoDich {
         System.out.println("2. Loại B");
         System.out.println("3. Loại C");
         int choice = Nhap.inputInt("Mời lựa chọn (mặc định: Loại A): ");
-        switch (choice) {
-            case 2:
-                return new GiaoDichDat(id, date, donGia, dienTich, LoaiDat.LOAI_B);
-            case 3:
-                return new GiaoDichDat(id, date, donGia, dienTich, LoaiDat.LOAI_C);
-            default:
-                return new GiaoDichDat(id, date, donGia, dienTich, LoaiDat.LOAI_A);
-        }
+        return switch (choice) {
+            case 2 -> new GiaoDichDat(id, date, donGia, dienTich, LoaiDat.LOAI_B);
+            case 3 -> new GiaoDichDat(id, date, donGia, dienTich, LoaiDat.LOAI_C);
+            default -> new GiaoDichDat(id, date, donGia, dienTich, LoaiDat.LOAI_A);
+        };
     }
 
     @Override
